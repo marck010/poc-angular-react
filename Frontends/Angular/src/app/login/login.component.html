@@ -1,0 +1,39 @@
+<form action="" class="form-content">
+  <div class="row">
+
+    <div class="col-sm-4 block-center">
+
+      <div class="row">
+        <div class="col-sm-12 mb-2">
+          <img width="200" height="200" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+        </div>
+
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input type="text" placeholder="Login" name="login" [(ng-model)]="user.login" class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input type="password" placeholder="Password" name="password" [(ng-model)]="user.password" class="form-control" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-12">
+          <button type="button" (click)="SignIn()" class="btn btn-primary">Sign In</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <span>First time? <a href="/register">Sing Up </a></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</form>

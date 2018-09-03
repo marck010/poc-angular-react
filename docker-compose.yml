@@ -1,0 +1,26 @@
+version: '2'
+services:
+         
+   service-application:
+      build: Service
+      ports:
+        - "172.18.0.1:4001:4001"
+        - "127.0.0.1:4001:4001"
+      volumes:
+        - ./Service:/opt/service-application
+
+   frontend-angular:
+      build: Frontends/Angular
+      ports:
+        - "172.18.0.1:8080:8080"
+        - "127.0.0.1:8080:8080"
+      volumes:
+        - ./Frontends/Angular:/opt/frontend-angular
+
+  #  frontend-react:
+  #     build: Frontends/React
+  #     ports:
+  #       - "172.18.0.1:8081:8081"
+  #       - "127.0.0.1:8081:8081"
+  #     volumes:
+  #       - ./Frontends/React:/opt/frontend-react
