@@ -5,9 +5,5 @@ export class UserModel {
   confirmPassword:string;
   name: String ;
   LastName: String ;
-  constructor() {
-
-  }
-
 
 }
